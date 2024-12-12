@@ -22,8 +22,10 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        velocity.y = Input.GetAxisRaw("Vertical") * speed;
-        velocity.x = Input.GetAxisRaw("Horizontal") * speed;
+        velocity.y = Input.GetAxisRaw("Vertical");
+        velocity.x = Input.GetAxisRaw("Horizontal");
+
+        velocity = velocity.normalized * speed;
 
         rigidBody.velocity = velocity;
     }
