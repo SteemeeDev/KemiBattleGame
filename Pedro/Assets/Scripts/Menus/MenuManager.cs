@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Threading.Tasks;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -11,33 +12,28 @@ public class MenuManager : MonoBehaviour
 {
 
     [SerializeField] Vector3 hoverSizeIncrease = new Vector3(0.5f,0.5f,0);
-    [SerializeField] public GameObject[] Buttons;
+    [SerializeField] private GameObject[] Buttons;
     [SerializeField] public float easingTime = 0.15f;
 
     public int selectedIndex = 0;
 
-    public virtual void Start()
-    {
-        StartCoroutine(smoothHover(easingTime));
-    }
 
-
-    bool menuOpen;
+    public bool menuOpen;
     public virtual void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow) && !menuOpen)
         {
-            StartCoroutine(smoothExit(easingTime));
+            SmoothExit(easingTime, Buttons, selectedIndex);
             selectedIndex = (selectedIndex - 1 + Buttons.Length) % Buttons.Length;
-            Debug.Log(Buttons[selectedIndex]);
-            StartCoroutine(smoothHover(easingTime));
+           // Debug.Log(Buttons[selectedIndex]);
+            SmoothHover(easingTime, Buttons, selectedIndex);
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow) && !menuOpen)
         {
-            StartCoroutine(smoothExit(easingTime));
+           SmoothExit(easingTime, Buttons, selectedIndex);
             selectedIndex = (selectedIndex + 1) % Buttons.Length; 
-            Debug.Log(Buttons[selectedIndex]);
-            StartCoroutine(smoothHover(easingTime));
+            //Debug.Log(Buttons[selectedIndex]);
+            SmoothHover(easingTime, Buttons, selectedIndex);
         }
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -47,42 +43,62 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    public IEnumerator smoothHover(float smoothTime)
+    public async void SmoothHover(float smoothTime, GameObject[] _buttons, int index)
     {
         float elapsed = 0;
         float t;
 
-        int _selectedIndex = selectedIndex;
-        Vector3 startScale = Buttons[_selectedIndex].GetComponent<Butto>().startScale;
-
-        while (elapsed < smoothTime)
+        Vector3 startScale = Vector3.zero;
+        try
         {
-            elapsed += Time.deltaTime;
-            t = elapsed / smoothTime;
-            // m_text.fontSize = Mathf.Lerp(startFontSize, startFontSize + hoverSizeIncrease, 1 - Mathf.Pow(1 - t, 4));
+            startScale = _buttons[index].GetComponent<Butto>().startScale;
 
-            Buttons[_selectedIndex].transform.localScale = Vector3.Lerp(startScale, startScale + hoverSizeIncrease, 1 - Mathf.Pow(1 - t, 4));
+          //  Debug.Log("Scaling up object " + index);
 
-            yield return null;
+            while (elapsed < smoothTime)
+            {
+                elapsed += Time.deltaTime;
+                t = elapsed / smoothTime;
+                // m_text.fontSize = Mathf.Lerp(startFontSize, startFontSize + hoverSizeIncrease, 1 - Mathf.Pow(1 - t, 4));
+
+                _buttons[index].transform.localScale = Vector3.Lerp(startScale, startScale + hoverSizeIncrease, 1 - Mathf.Pow(1 - t, 4));
+
+                await Task.Yield();
+            }
         }
+        catch
+        {
+          //  Debug.Log("Object cant be scaled!");
+            return;
+        }
+
     }
-    public IEnumerator smoothExit(float smoothTime)
+    public async void SmoothExit(float smoothTime, GameObject[] _buttons, int index)
     {
         float elapsed = smoothTime;
         float t;
-
-        int _selectedIndex = selectedIndex;
-        Vector3 startScale = Buttons[_selectedIndex].GetComponent<Butto>().startScale;
-
-        while (elapsed > 0)
+        Vector3 startScale = Vector3.zero;
+        try
         {
-            elapsed -= Time.deltaTime;
-            t = elapsed / smoothTime;
-            //m_text.fontSize = Mathf.Lerp(startFontSize, startFontSize + hoverSizeIncrease, 1 - Mathf.Pow(1 - t, 4));
+            startScale = _buttons[index].GetComponent<Butto>().startScale;
+          //  Debug.Log("Scaling down object " + index);
 
-            Buttons[_selectedIndex].transform.localScale = Vector3.Lerp(startScale, startScale + hoverSizeIncrease, 1 - Mathf.Pow(1 - t, 4));
+            while (elapsed > 0)
+            {
+                elapsed -= Time.deltaTime;
+                t = elapsed / smoothTime;
+                //m_text.fontSize = Mathf.Lerp(startFontSize, startFontSize + hoverSizeIncrease, 1 - Mathf.Pow(1 - t, 4));
 
-            yield return null;
+                _buttons[index].transform.localScale = Vector3.Lerp(startScale, startScale + hoverSizeIncrease, 1 - Mathf.Pow(1 - t, 4));
+
+                await Task.Yield();
+            }
+        }
+        
+        catch
+        {
+          //  Debug.Log("Object cant be scaled!");
+            return;
         }
     }
 }
