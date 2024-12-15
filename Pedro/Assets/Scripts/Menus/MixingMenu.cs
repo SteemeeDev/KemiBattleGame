@@ -20,6 +20,11 @@ public class MixingMenu : MenuManager
     public int up;
     bool leftSide = true;
 
+    public Chemical[] chemicals;
+    private Chemical madeChemical;
+
+    [SerializeField] GameObject fightMenu;
+
     
     // This may be the worst code i have ever written, i apologize to anyone reading - Tore
 
@@ -78,15 +83,16 @@ public class MixingMenu : MenuManager
         {
             if (!leftSide)
             {
-
                 if (GO2 != null)
                 {
                     rightButtons[rightSelectedIndex] = GO2;
-                    GO2.transform.position = GO2.GetComponent<Butto>().startPos;
+                    StartCoroutine(GO2.GetComponent<SelectChemical>().MoveToStartPos(0.15f));
                 }
 
                 rightSelectedIndex = rightIndex;
                 rightButtons[rightIndex].GetComponent<Butto>().Click();
+                
+                SmoothHover(easingTime, rightButtons, rightIndex);
             }
             if (leftSide)
             {
@@ -94,11 +100,44 @@ public class MixingMenu : MenuManager
                 {
                     //Debug.Log("Setting " + leftButtons[leftSelectedIndex]);
                     leftButtons[leftSelectedIndex] = GO1;
-                    GO1.transform.position = GO1.GetComponent<Butto>().startPos;
+                    StartCoroutine(GO1.GetComponent<SelectChemical>().MoveToStartPos(0.15f));
                 }
+
                 leftSelectedIndex = leftIndex;
                 leftButtons[leftIndex].GetComponent<Butto>().Click();
+                
+                SmoothHover(easingTime, leftButtons, leftIndex);
                 //Debug.Log("Setting left selectedIndex");
+            }
+        }
+
+        if (Input.GetKeyDown (KeyCode.Return))
+        {
+            Debug.Log("Mixing " + GO1.name + " with " + GO2.name);
+
+            madeChemical = null;
+
+            foreach (Chemical chem in chemicals)
+            {
+                if (chem.leftChem == GO1.name)
+                {
+                    if (chem.rightChem == GO2.name)
+                    {
+                        madeChemical = chem;
+                    }
+                }
+            }
+
+            if (madeChemical != null)
+            {
+                Debug.Log(madeChemical.name);
+
+                fightMenu.SetActive(true);
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                Debug.Log("Chemical doesnt exist yet!");
             }
         }
     }
