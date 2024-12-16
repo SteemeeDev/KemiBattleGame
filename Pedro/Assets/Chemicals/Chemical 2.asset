@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e71e6131153a2e44883e1df246a2eb3, type: 3}
   m_Name: Chemical 2
   m_EditorClassIdentifier: 
-  leftChem: 
-  rightChem: 
+  leftChem: Sigma
+  rightChem: Hydrogen
   stink: 5
