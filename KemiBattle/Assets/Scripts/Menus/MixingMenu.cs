@@ -25,7 +25,19 @@ public class MixingMenu : MenuManager
 
     [SerializeField] GameObject fightMenu;
 
-    
+    [SerializeField] Transform defaultCamPos;
+    [SerializeField] Transform targetCamPos;
+    [SerializeField] Transform playerTransform;
+
+    [SerializeField] CameraFollow camFollow;
+    [SerializeField, Range(0f,1f)] float followAmount;
+
+    private void OnEnable()
+    {
+        camFollow.followPos = targetCamPos;
+    }
+
+
     // This may be the worst code i have ever written, i apologize to anyone reading - Tore
 
     public override void Update()
@@ -39,6 +51,7 @@ public class MixingMenu : MenuManager
                 leftIndex = (leftIndex - 1 + leftButtons.Length) % leftButtons.Length;
                 if (leftButtons[leftIndex] == null) leftIndex = (leftIndex - 1 + leftButtons.Length) % leftButtons.Length;
                 SmoothHover(easingTime, leftButtons, leftIndex);
+                targetCamPos.position = Vector3.Lerp(defaultCamPos.position, leftButtons[leftIndex].transform.position, followAmount);
             }
             else if (!leftSide)
             {
@@ -46,6 +59,7 @@ public class MixingMenu : MenuManager
                 rightIndex = (rightIndex - 1 + rightButtons.Length) % rightButtons.Length;
                 if (rightButtons[rightIndex] == null) rightIndex = (rightIndex - 1 + rightButtons.Length) % rightButtons.Length;
                 SmoothHover(easingTime, rightButtons, rightIndex);
+                targetCamPos.position = Vector3.Lerp(defaultCamPos.position, rightButtons[rightIndex].transform.position, followAmount);
             }
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -57,6 +71,7 @@ public class MixingMenu : MenuManager
                 leftIndex = (leftIndex + 1 + leftButtons.Length) % leftButtons.Length;
                 if (leftButtons[leftIndex] == null) leftIndex = (leftIndex + 1 + leftButtons.Length) % leftButtons.Length;
                 SmoothHover(easingTime, leftButtons, leftIndex);
+                targetCamPos.position = Vector3.Lerp(defaultCamPos.position, leftButtons[leftIndex].transform.position, followAmount);
             }
             else if (!leftSide)
             {
@@ -64,18 +79,23 @@ public class MixingMenu : MenuManager
                 rightIndex = (rightIndex + 1 + rightButtons.Length) % rightButtons.Length;
                 if (rightButtons[rightIndex] == null) rightIndex = (rightIndex + 1 + rightButtons.Length) % rightButtons.Length;
                 SmoothHover(easingTime, rightButtons, rightIndex);
+                targetCamPos.position = Vector3.Lerp(defaultCamPos.position, rightButtons[rightIndex].transform.position, followAmount);
             }
         }
 
         else if (Input.GetKeyDown(KeyCode.RightArrow))
         {
+            SmoothExit(easingTime, leftButtons, leftIndex);
             leftSide = false;
             SmoothHover(easingTime, rightButtons, rightIndex);
+            targetCamPos.position = Vector3.Lerp(defaultCamPos.position, rightButtons[rightIndex].transform.position, followAmount);
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            SmoothExit(easingTime, rightButtons, rightIndex);
             leftSide = true;
             SmoothHover(easingTime, leftButtons, leftIndex);
+            targetCamPos.position = Vector3.Lerp(defaultCamPos.position, leftButtons[leftIndex].transform.position, followAmount);
         }
 
 
@@ -93,6 +113,7 @@ public class MixingMenu : MenuManager
                 rightButtons[rightIndex].GetComponent<Butto>().Click();
                 
                 SmoothHover(easingTime, rightButtons, rightIndex);
+                targetCamPos.position = Vector3.Lerp(defaultCamPos.position, rightButtons[rightIndex].transform.position, followAmount);
             }
             if (leftSide)
             {
@@ -107,6 +128,7 @@ public class MixingMenu : MenuManager
                 leftButtons[leftIndex].GetComponent<Butto>().Click();
                 
                 SmoothHover(easingTime, leftButtons, leftIndex);
+                targetCamPos.position = Vector3.Lerp(defaultCamPos.position, leftButtons[leftIndex].transform.position, followAmount);
                 //Debug.Log("Setting left selectedIndex");
             }
         }
@@ -131,7 +153,7 @@ public class MixingMenu : MenuManager
             if (madeChemical != null)
             {
                 Debug.Log(madeChemical.name);
-
+                camFollow.followPos = playerTransform;
                 fightMenu.SetActive(true);
                 gameObject.SetActive(false);
             }

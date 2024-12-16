@@ -7,7 +7,7 @@ public class Attack : MonoBehaviour
 {
     [SerializeField] int damage;
 
-    void Awake()
+    public virtual void Awake()
     {
         Debug.Log("Attack incoming!");
         StartCoroutine(attack(3));
@@ -34,6 +34,5 @@ public class Attack : MonoBehaviour
         Debug.Log("Player took damage!");
         player.GetComponent<PlayerManager>().health -= damage;
         Debug.Log(player.GetComponent<PlayerManager>().health);
-        Destroy(gameObject);
     }
 }
