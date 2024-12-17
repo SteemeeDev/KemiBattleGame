@@ -17,23 +17,32 @@ public class MenuManager : MonoBehaviour
 
     public int selectedIndex = 0;
 
+    [SerializeField] bool animate;
 
     public bool menuOpen;
     public virtual void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow) && !menuOpen)
         {
+            if (animate)
+                Buttons[selectedIndex].GetComponent<Animator>().enabled = false;
             SmoothExit(easingTime, Buttons, selectedIndex);
             selectedIndex = (selectedIndex - 1 + Buttons.Length) % Buttons.Length;
            // Debug.Log(Buttons[selectedIndex]);
             SmoothHover(easingTime, Buttons, selectedIndex);
+            if (animate)
+                Buttons[selectedIndex].GetComponent<Animator>().enabled = true;
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow) && !menuOpen)
         {
-           SmoothExit(easingTime, Buttons, selectedIndex);
+            if (animate)
+                Buttons[selectedIndex].GetComponent<Animator>().enabled = false;
+            SmoothExit(easingTime, Buttons, selectedIndex);
             selectedIndex = (selectedIndex + 1) % Buttons.Length; 
             //Debug.Log(Buttons[selectedIndex]);
             SmoothHover(easingTime, Buttons, selectedIndex);
+            if (animate)
+                Buttons[selectedIndex].GetComponent<Animator>().enabled = true;
         }
 
         if (Input.GetKeyDown(KeyCode.E))

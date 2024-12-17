@@ -22,5 +22,7 @@ public class GoToButton : Butto
         {
             enableObj.GetComponent<MenuManager>().enabled = true;
         }
+
+
     }
 }
