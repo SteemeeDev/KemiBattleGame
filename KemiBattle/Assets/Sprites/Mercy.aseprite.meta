@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d0b7ba13080d8ea46a847da41557a86b
+guid: 0ba48541c897cf249a502f6208e97f0b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638701147842018722
+  platformSettingsDirtyTick: 638701181744025390
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,10 +119,10 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Kemi menu_Frame_0
+  - name: Mercy
     originalName: 
     pivot: {x: 0.5, y: 0.5}
-    alignment: 9
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 66
       height: 34
-    spriteID: 1ce090dbe7e1495419f97889d2ac1eef
+    spriteID: ebeb82bec46545f44b22e6c43c304c3f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,107 +139,23 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Kemi menu_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 46
-      width: 66
-      height: 34
-    spriteID: 52f97000eff155f4fbf9401cbaabd50b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 46}
-  - name: Kemi menu_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 88
-      width: 66
-      height: 34
-    spriteID: c0ce89953df56804e8c932335005172b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 88}
-  - name: Kemi menu_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 130
-      width: 66
-      height: 34
-    spriteID: 10aceb46efab92c4c8407c681a352c3d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 130}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 532186401
-    name: Kemi menu
+    guid: -400174518
+    name: Mercy
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Kemi menu_Frame_0
+    - name: Mercy
       frameIndex: 0
       cellRect:
-        x: 47
-        y: 85
+        x: 15
+        y: 35
         width: 66
         height: 34
-      spriteId: 1ce090dbe7e1495419f97889d2ac1eef
-    - name: Kemi menu_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 47
-        y: 85
-        width: 66
-        height: 34
-      spriteId: 52f97000eff155f4fbf9401cbaabd50b
-    - name: Kemi menu_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 47
-        y: 85
-        width: 66
-        height: 34
-      spriteId: c0ce89953df56804e8c932335005172b
-    - name: Kemi menu_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 47
-        y: 85
-        width: 66
-        height: 34
-      spriteId: 10aceb46efab92c4c8407c681a352c3d
+      spriteId: ebeb82bec46545f44b22e6c43c304c3f
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -281,4 +197,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 150, y: 150}
+  canvasSize: {x: 100, y: 100}

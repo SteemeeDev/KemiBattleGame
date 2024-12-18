@@ -1,0 +1,1060 @@
+fileFormatVersion: 2
+guid: 1f3cd0653a5b74a459f0a594779cd134
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Heart_Kolbe_Death_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -0.2888889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 376
+      y: 200
+      width: 38
+      height: 45
+    spriteID: 3a959765751417b4cb823db78b2bb9fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 376, y: 200}
+  - name: Heart_Kolbe_Death_Frame_1
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.2888889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 207
+      width: 44
+      height: 45
+    spriteID: a8f7ecc789d61fa469cd302be48aa1dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 207}
+  - name: Heart_Kolbe_Death_Frame_2
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.26086956}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 206
+      width: 44
+      height: 46
+    spriteID: e7a9c59571322c9498ea5a0e889cf2cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 206}
+  - name: Heart_Kolbe_Death_Frame_3
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.23404254}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 200
+      width: 44
+      height: 47
+    spriteID: 4c867a5ecc6c2da49b082ead6bcf9f6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 200}
+  - name: Heart_Kolbe_Death_Frame_4
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 272
+      y: 203
+      width: 44
+      height: 48
+    spriteID: 83df5bb7ffde98842a39bfdd0c672296
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 272, y: 203}
+  - name: Heart_Kolbe_Death_Frame_5
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.20833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 430
+      y: 142
+      width: 44
+      height: 48
+    spriteID: 1665a3514469e284d884e46d438bc14e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 430, y: 142}
+  - name: Heart_Kolbe_Death_Frame_6
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.16}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 142
+      width: 44
+      height: 50
+    spriteID: e1e53f18148ebd84fb24113b348a749c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 142}
+  - name: Heart_Kolbe_Death_Frame_7
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.094339624}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 199
+      width: 44
+      height: 53
+    spriteID: e274692d2a87c1d41b3822e00d15ae8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 199}
+  - name: Heart_Kolbe_Death_Frame_8
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.094339624}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 272
+      y: 142
+      width: 44
+      height: 53
+    spriteID: 2e16f1b3047840549a12f2538d8ada82
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 272, y: 142}
+  - name: Heart_Kolbe_Death_Frame_9
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.01754386}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 142
+      width: 44
+      height: 57
+    spriteID: bd66785ca6799b04eacf908039137cad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 142}
+  - name: Heart_Kolbe_Death_Frame_10
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 351
+      y: 4
+      width: 44
+      height: 58
+    spriteID: f2c37e3c8e8ad7941bb1adc13287c01c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 351, y: 4}
+  - name: Heart_Kolbe_Death_Frame_11
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 403
+      y: 4
+      width: 44
+      height: 58
+    spriteID: cb6ccd3ec653b0b4b8662611f133ce12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 403, y: 4}
+  - name: Heart_Kolbe_Death_Frame_12
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 455
+      y: 4
+      width: 44
+      height: 58
+    spriteID: ff038f8eebc529d40afad116ab1327b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 455, y: 4}
+  - name: Heart_Kolbe_Death_Frame_13
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 76
+      width: 44
+      height: 58
+    spriteID: b60edaf615261bc458d7e2870fccb399
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 76}
+  - name: Heart_Kolbe_Death_Frame_14
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 76
+      width: 44
+      height: 58
+    spriteID: b4f5feb82c07a4e4284ff98c4786a65b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 76}
+  - name: Heart_Kolbe_Death_Frame_15
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 76
+      width: 44
+      height: 58
+    spriteID: 5b402e2ed6749924687d6c04088639ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 76}
+  - name: Heart_Kolbe_Death_Frame_16
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 160
+      y: 76
+      width: 44
+      height: 58
+    spriteID: ed1b3b799cdcc9541ae5455451b6d8d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 160, y: 76}
+  - name: Heart_Kolbe_Death_Frame_17
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 76
+      width: 44
+      height: 58
+    spriteID: b36d60afbffd8ca47a36265ebf131f61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 76}
+  - name: Heart_Kolbe_Death_Frame_18
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 264
+      y: 76
+      width: 44
+      height: 58
+    spriteID: 30811ebea96a68042bce5e11b347dada
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 264, y: 76}
+  - name: Heart_Kolbe_Death_Frame_19
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 76
+      width: 44
+      height: 58
+    spriteID: 031a23806c200fa4685819f1ce0812e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 76}
+  - name: Heart_Kolbe_Death_Frame_20
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 368
+      y: 76
+      width: 44
+      height: 58
+    spriteID: 07a2b8f9d82f06b47b072a59d8471391
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 368, y: 76}
+  - name: Heart_Kolbe_Death_Frame_21
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 76
+      width: 44
+      height: 58
+    spriteID: dfee91e59b8d5e242afa631b28d7326e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 76}
+  - name: Heart_Kolbe_Death_Frame_22
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 142
+      width: 44
+      height: 56
+    spriteID: 4f3b8e23d28d5484186b78f179b97935
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 142}
+  - name: Heart_Kolbe_Death_Frame_23
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 142
+      width: 44
+      height: 56
+    spriteID: 0109054b4d65f584fba1d8db2efe5965
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 142}
+  - name: Heart_Kolbe_Death_Frame_24
+    originalName: 
+    pivot: {x: 0.5681818, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 142
+      width: 44
+      height: 58
+    spriteID: 80261d2478241f649a3a21c1d3275c1f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 142}
+  - name: Heart_Kolbe_Death_Frame_25
+    originalName: 
+    pivot: {x: 0.5681818, y: -0.2888889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 206
+      width: 44
+      height: 45
+    spriteID: 492cdb956e5a95b4cb37de2035c82e96
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 206}
+  - name: Heart_Kolbe_Death_Frame_26
+    originalName: 
+    pivot: {x: 0.54347825, y: -0.23404254}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 376
+      y: 142
+      width: 46
+      height: 47
+    spriteID: 2b479b7c78b65794aa2560a6a0806c28
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 376, y: 142}
+  - name: Heart_Kolbe_Death_Frame_27
+    originalName: 
+    pivot: {x: 0.5192308, y: -0.20408162}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 56
+      y: 142
+      width: 52
+      height: 49
+    spriteID: 33aa5dd085cd0af49938f7a38a8f28f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 56, y: 142}
+  - name: Heart_Kolbe_Death_Frame_28
+    originalName: 
+    pivot: {x: 0.5090909, y: -0.0862069}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 288
+      y: 4
+      width: 55
+      height: 58
+    spriteID: 34f483cc9934d7c4d9ac9e1e4f112593
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 288, y: 4}
+  - name: Heart_Kolbe_Death_Frame_29
+    originalName: 
+    pivot: {x: 0.5081967, y: -0.032258064}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 219
+      y: 4
+      width: 61
+      height: 62
+    spriteID: 26d70ce3334f26040a2128d239a531bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 219, y: 4}
+  - name: Heart_Kolbe_Death_Frame_30
+    originalName: 
+    pivot: {x: 0.50793654, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 4
+      width: 63
+      height: 64
+    spriteID: 039724bdc43e94049beaf1fb4f70e21c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 4}
+  - name: Heart_Kolbe_Death_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 64
+      height: 64
+    spriteID: 4be56124a7d1b8948a28816c7f9a52e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Heart_Kolbe_Death_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 4
+      width: 64
+      height: 64
+    spriteID: 6de18b6191bba0a4aae2daf2ff4e7224
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1316086521
+    name: Heart_Kolbe_Death
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Heart_Kolbe_Death_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 13
+        y: 13
+        width: 38
+        height: 45
+      spriteId: 3a959765751417b4cb823db78b2bb9fa
+    - name: Heart_Kolbe_Death_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 7
+        y: 13
+        width: 44
+        height: 45
+      spriteId: a8f7ecc789d61fa469cd302be48aa1dd
+    - name: Heart_Kolbe_Death_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 7
+        y: 12
+        width: 44
+        height: 46
+      spriteId: e7a9c59571322c9498ea5a0e889cf2cf
+    - name: Heart_Kolbe_Death_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 7
+        y: 11
+        width: 44
+        height: 47
+      spriteId: 4c867a5ecc6c2da49b082ead6bcf9f6e
+    - name: Heart_Kolbe_Death_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 7
+        y: 10
+        width: 44
+        height: 48
+      spriteId: 83df5bb7ffde98842a39bfdd0c672296
+    - name: Heart_Kolbe_Death_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 7
+        y: 10
+        width: 44
+        height: 48
+      spriteId: 1665a3514469e284d884e46d438bc14e
+    - name: Heart_Kolbe_Death_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 7
+        y: 8
+        width: 44
+        height: 50
+      spriteId: e1e53f18148ebd84fb24113b348a749c
+    - name: Heart_Kolbe_Death_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 7
+        y: 5
+        width: 44
+        height: 53
+      spriteId: e274692d2a87c1d41b3822e00d15ae8b
+    - name: Heart_Kolbe_Death_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 7
+        y: 5
+        width: 44
+        height: 53
+      spriteId: 2e16f1b3047840549a12f2538d8ada82
+    - name: Heart_Kolbe_Death_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 7
+        y: 1
+        width: 44
+        height: 57
+      spriteId: bd66785ca6799b04eacf908039137cad
+    - name: Heart_Kolbe_Death_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: f2c37e3c8e8ad7941bb1adc13287c01c
+    - name: Heart_Kolbe_Death_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: cb6ccd3ec653b0b4b8662611f133ce12
+    - name: Heart_Kolbe_Death_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: ff038f8eebc529d40afad116ab1327b7
+    - name: Heart_Kolbe_Death_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: b60edaf615261bc458d7e2870fccb399
+    - name: Heart_Kolbe_Death_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: b4f5feb82c07a4e4284ff98c4786a65b
+    - name: Heart_Kolbe_Death_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: 5b402e2ed6749924687d6c04088639ff
+    - name: Heart_Kolbe_Death_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: ed1b3b799cdcc9541ae5455451b6d8d8
+    - name: Heart_Kolbe_Death_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: b36d60afbffd8ca47a36265ebf131f61
+    - name: Heart_Kolbe_Death_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: 30811ebea96a68042bce5e11b347dada
+    - name: Heart_Kolbe_Death_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: 031a23806c200fa4685819f1ce0812e4
+    - name: Heart_Kolbe_Death_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: 07a2b8f9d82f06b47b072a59d8471391
+    - name: Heart_Kolbe_Death_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: dfee91e59b8d5e242afa631b28d7326e
+    - name: Heart_Kolbe_Death_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 7
+        y: 2
+        width: 44
+        height: 56
+      spriteId: 4f3b8e23d28d5484186b78f179b97935
+    - name: Heart_Kolbe_Death_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 7
+        y: 2
+        width: 44
+        height: 56
+      spriteId: 0109054b4d65f584fba1d8db2efe5965
+    - name: Heart_Kolbe_Death_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 7
+        y: 0
+        width: 44
+        height: 58
+      spriteId: 80261d2478241f649a3a21c1d3275c1f
+    - name: Heart_Kolbe_Death_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 7
+        y: 13
+        width: 44
+        height: 45
+      spriteId: 492cdb956e5a95b4cb37de2035c82e96
+    - name: Heart_Kolbe_Death_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 7
+        y: 11
+        width: 46
+        height: 47
+      spriteId: 2b479b7c78b65794aa2560a6a0806c28
+    - name: Heart_Kolbe_Death_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 5
+        y: 10
+        width: 52
+        height: 49
+      spriteId: 33aa5dd085cd0af49938f7a38a8f28f3
+    - name: Heart_Kolbe_Death_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 4
+        y: 5
+        width: 55
+        height: 58
+      spriteId: 34f483cc9934d7c4d9ac9e1e4f112593
+    - name: Heart_Kolbe_Death_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 1
+        y: 2
+        width: 61
+        height: 62
+      spriteId: 26d70ce3334f26040a2128d239a531bb
+    - name: Heart_Kolbe_Death_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 0
+        y: 0
+        width: 63
+        height: 64
+      spriteId: 039724bdc43e94049beaf1fb4f70e21c
+    - name: Heart_Kolbe_Death_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 4be56124a7d1b8948a28816c7f9a52e5
+    - name: Heart_Kolbe_Death_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 6de18b6191bba0a4aae2daf2ff4e7224
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}
