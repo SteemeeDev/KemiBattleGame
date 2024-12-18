@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 3708625748989789009}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.47, y: 0.93, z: 0}
+  m_LocalPosition: {x: 2.501, y: 2.842, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -76,8 +76,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 3
   throwDir: {x: -24.1, y: 20.6, z: 0}
-  speed: 35
+  speed: 100
   reflections: 30
+  handBall: {fileID: 1724645603676261975}
   lineRenderer: {fileID: 8346196916876397593}
   groundRaycastLayer:
     serializedVersion: 2
@@ -93,9 +94,9 @@ GameObject:
   - component: {fileID: 1724645603676261975}
   - component: {fileID: 3205607256385362735}
   - component: {fileID: 2351558000528468351}
-  - component: {fileID: 5915862501186062072}
+  - component: {fileID: 4428215493814020360}
   m_Layer: 13
-  m_Name: Basketball
+  m_Name: Handball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -110,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 6535164394690613673}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.02, y: -2.765, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -210,7 +211,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 0.16
+  m_Time: 0.08
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -241,7 +242,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -281,27 +282,41 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 0
---- !u!135 &5915862501186062072
-SphereCollider:
+--- !u!58 &4428215493814020360
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6535164394690613673}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 8375
   m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 3.0397236
-  m_Center: {x: 0.03435254, y: 0, z: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000019073486, y: 0.00000047683716}
+  serializedVersion: 2
+  m_Radius: 3.25
 --- !u!1 &8308357105026832387
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,7 +27,7 @@ public class MixingMenu : MenuManager
 
     [SerializeField] Transform defaultCamPos;
     [SerializeField] Transform targetCamPos;
-    [SerializeField] Transform playerTransform;
+    [SerializeField] Transform followTransform;
 
     [SerializeField] CameraFollow camFollow;
     [SerializeField, Range(0f,1f)] float followAmount;
@@ -153,7 +153,7 @@ public class MixingMenu : MenuManager
             if (madeChemical != null)
             {
                 Debug.Log(madeChemical.name);
-                camFollow.followPos = playerTransform;
+                camFollow.followPos = followTransform;
                 fightMenu.SetActive(true);
                 gameObject.SetActive(false);
             }
